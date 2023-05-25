@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NewsAppKotlin</string>
+    <string name="api_key">631d7c0ee14d4df9bdc934c71f227620</string>
+</resources>
