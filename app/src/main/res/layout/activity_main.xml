@@ -18,4 +18,10 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 
+<!--    <fragment-->
+<!--        android:id="@+id/listItemFragment"-->
+<!--        android:name="com.example.newsappkotlin.ui.fragments.MainFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

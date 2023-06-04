@@ -13,8 +13,8 @@ class NewsManager {
         newsService = retrofit.create(NewsService::class.java)
     }
 
-    suspend fun getNews() =
-        newsService.getNews("us")
+    suspend fun getNews(category: String) =
+        newsService.getNews("us", category)
 
 //    suspend fun getNews() =
 //        newsService.getNews()

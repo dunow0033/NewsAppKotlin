@@ -3,6 +3,7 @@ package com.example.newsappkotlin.adapters
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -27,8 +28,15 @@ class NewsAdapter(val context: Context) : RecyclerView.Adapter<NewsAdapter.NewsV
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
 
+        val currentNews = news[position]
+
         holder.binding.textTitle.text = news[position].title
         holder.binding.textSource.text = news[position].source.toString()
+
+//        holder.binding.mainContainer.setOnClickListener {
+//            val action = TodoListDirections.actionTodoListToTodoItemDetail(currentTodo)
+//            holder.itemView.findNavController().navigate(action)
+//        }
 
 //        if (headlines.get(position).getUrlToImage() != null) {
 //            Picasso.get().load(headlines.get(position).getUrlToImage()).into(holder.binding.imgHeadline)
