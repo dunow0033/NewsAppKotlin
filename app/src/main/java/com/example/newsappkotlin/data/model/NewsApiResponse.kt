@@ -9,5 +9,5 @@ import kotlinx.parcelize.Parcelize
 data class NewsApiResponse(
     val status: String? = "",
     val totalResults: Int? = 0,
-    val articles: List<NewsHeadlines>? = null
+    val articles: List<NewsHeadlines>
 ) : Parcelable

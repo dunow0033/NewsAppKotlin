@@ -100,12 +100,12 @@ class MainFragment : Fragment(), View.OnClickListener {
     }
 
     private val listener: OnFetchDataListener<NewsApiResponse> = object : OnFetchDataListener<NewsApiResponse> {
-            override fun onFetchData(list: List<NewsHeadlines>?, message: String?) {
-                if (list!!.isEmpty()) {
+            override fun onFetchData(list: List<NewsHeadlines>, message: String) {
+                if (list.isEmpty()) {
                     Toast.makeText(requireContext(), "No data found!!", Toast.LENGTH_LONG).show()
                 } else {
                     setupRecyclerView()
-                    dialog!!.dismiss()
+                   // dialog!!.dismiss()
                 }
             }
 
